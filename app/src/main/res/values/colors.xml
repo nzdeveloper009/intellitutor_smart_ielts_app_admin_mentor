@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#329DB9</color>
+    <color name="purple_500">#005f9f</color>
+    <color name="purple_700">#004480</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="backgroundColor">#FDFDFD</color>
+    <color name="textColor">#1A6EFC</color>
+    <color name="hintColor">#C7C7C7</color>
+    <color name="buttonColor">#1975B7</color>
+    <color name="statusBarColor">#004480</color>
+    <color name="appBarColor">#005f9f </color>
+    <color name="colorPurple">#16182B</color>
+    <color name="logoTextColor">#329DB9</color>
+    <color name="logoColor">#1975B7</color>
+    <color name="grayColor">#636262</color>
+    <color name="disable_card">#40959595</color>
+
+    <item name="cardBackground" type="color">#f6f6f6</item>
+    <color name="edittextColor">#DDDDDD</color>
+
+</resources>

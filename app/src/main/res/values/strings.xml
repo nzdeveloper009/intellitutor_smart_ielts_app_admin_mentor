@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Intellitutor-Smart IELTS app</string>
+    <string name="app_moto">Smart IELTS App</string>
+    <string name="pin">\@Admin512145</string>
+    <string name="done">Done ?</string>
+    <string name="editNumber">Edit Number</string>
+    <string name="edit">Edit</string>
+    <string name="group_chat_file_sharing"><![CDATA[Group chat & file sharing]]></string>
+    <string name="mentor_are_going_to_register_nplease_wait">Mentor are going to register...\nPlease wait.....</string>
+
+    <!--    Material Category -->
+    <string-array name="materials">
+        <item>Listening Material</item>
+        <item>Reading Material</item>
+        <item>Writing Material</item>
+        <item>Speaking Material</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

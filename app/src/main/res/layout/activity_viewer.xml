@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ViewerActivity">
+    <TextView
+        android:id="@+id/uploadBy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Uploaded By: Admin"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/black"
+        android:textIsSelectable="true"
+        android:textStyle="bold|italic"
+        />
+
+    <TextView
+        android:id="@+id/shortDescTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Short Description"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textColor="@color/black"
+        android:textIsSelectable="true"
+        android:textSize="@dimen/_12sdp"
+        android:inputType="textMultiLine"
+        android:maxHeight="@dimen/_100sdp"
+        />
+    <TextView
+        android:id="@+id/longDescTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Long Description"
+        android:textIsSelectable="true"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/black"
+        android:inputType="textMultiLine"
+        android:maxHeight="@dimen/_150sdp"
+        />
+
+    <include layout="@layout/pdf_viewer" />
+    <include layout="@layout/image_viewer" />
+    <include layout="@layout/docs_viewer" />
+
+
+
+
+</LinearLayout>

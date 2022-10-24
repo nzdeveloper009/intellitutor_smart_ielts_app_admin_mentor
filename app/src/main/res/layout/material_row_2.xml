@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/_8sdp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="10dp"
+        app:cardBackgroundColor="@color/cardBackground"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_toStartOf="@+id/imgMaterialDelete"
+                android:text="Nothing"
+                android:textColor="@color/purple_700"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtShortDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtTitle"
+                android:layout_alignStart="@+id/txtTitle"
+                android:layout_marginTop="8dp"
+                android:layout_toStartOf="@+id/imgMaterialDelete"
+                android:text="Nothing"
+                android:inputType="textMultiLine"
+                android:textColor="@color/purple_700"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/uploadBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtShortDesc"
+                android:layout_alignStart="@+id/txtShortDesc"
+                android:layout_marginTop="8dp"
+                android:text="nothing"
+                android:textColor="@color/purple_700"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgMaterialDelete"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_delete" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgContactUserInfo"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignTop="@id/container"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="13dp"
+        android:elevation="10dp"
+        android:src="@drawable/logo" />
+
+</RelativeLayout>

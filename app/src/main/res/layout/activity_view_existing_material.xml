@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".admin.activity.material.ViewExistingMaterialActivity">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/showListeningMaterialList"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="5dp"
+                android:background="@color/white"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <TextView
+                    android:id="@+id/listeningMaterialListTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Listening Material"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/showReadingMaterialList"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <TextView
+                    android:id="@+id/readingMaterialListTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/disable_card"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Reading Material"
+                    android:textColor="@color/grayColor"
+                    android:textSize="18sp" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/showWritingMaterialList"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="5dp"
+                android:background="@color/grayColor"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <TextView
+                    android:id="@+id/writingMaterialListTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/disable_card"
+                    android:gravity="center"
+                    android:text="Writing Material"
+                    android:textColor="@color/grayColor"
+                    android:textSize="18sp" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/showSpeakingMaterialList"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="5dp"
+                android:background="@color/grayColor"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <TextView
+                    android:id="@+id/speakingMaterialListTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/disable_card"
+                    android:gravity="center"
+                    android:text="Speaking Material"
+                    android:textColor="@color/grayColor"
+                    android:textSize="18sp" />
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/header"
+        >
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/materialListRv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/material_row_2" />
+
+</LinearLayout>

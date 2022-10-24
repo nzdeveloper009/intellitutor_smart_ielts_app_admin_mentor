@@ -1,0 +1,110 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        applicationId "com.fyp.intellitutor_smartieltsapp"
+        minSdk 21
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+
+        // ... Anything that was already here
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+        manifestPlaceholders = [pdftronLicenseKey:PDFTRON_LICENSE_KEY]
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+    }
+
+    packagingOptions {
+        resources.excludes.add("META-INF/*")
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    implementation 'com.google.firebase:firebase-database:20.0.4'
+    implementation 'com.google.firebase:firebase-storage:20.0.1'
+    implementation 'com.google.firebase:firebase-auth:21.0.6'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    // lottie animation
+    implementation 'com.airbnb.android:lottie:5.0.3'
+    // Tasty Toast
+    implementation 'com.sdsmdg.tastytoast:tastytoast:0.1.1'
+    // google Custom progress dialog
+    implementation 'com.jpardogo.googleprogressbar:library:1.2.0'
+    // Dexter is an Android library that simplifies the process of requesting permissions at runtime.
+    implementation 'com.karumi:dexter:6.2.3'
+    // cropper
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.4+'
+    // picasso library
+    implementation 'com.squareup.picasso:picasso:2.5.1'
+    // Glide
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    // size
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    // Circle Image
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    // PDF Viewer
+    implementation 'com.github.barteksc:android-pdf-viewer:3.2.0-beta.1'
+    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+
+/*    //https://mvnrepository.com/artifact/fr.opensagres.xdocreport/fr.opensagres.poi.xwpf.converter.pdf/2.0.1
+    implementation 'fr.opensagres.xdocreport:fr.opensagres.poi.xwpf.converter.pdf:2.0.1'*/
+
+    implementation 'com.mindorks.android:prdownloader:0.6.0'
+
+    // https://pspdfkit.com/getting-started/android/?project=existing-project&package-manager=gradle
+    // https://pspdfkit.com/guides/android/downloads/
+    // https://pspdfkit.com/guides/android/features/office-conversion/
+    // implementation 'com.pspdfkit:pspdfkit:8.3.0'
+
+
+/*    // https://mvnrepository.com/artifact/fr.opensagres.xdocreport/fr.opensagres.poi.xwpf.converter.pdf
+    implementation 'fr.opensagres.xdocreport:fr.opensagres.poi.xwpf.converter.pdf:2.0.3'
+    // https://mvnrepository.com/artifact/fr.opensagres.xdocreport/fr.opensagres.xdocreport.itext.extension
+    implementation 'fr.opensagres.xdocreport:fr.opensagres.xdocreport.itext.extension:2.0.3'*/
+
+
+
+
+
+    //https://www.pdftron.com/documentation/android/guides/features/office/convert-office/
+    implementation "com.pdftron:pdftron:9.3.0"
+    implementation "com.pdftron:tools:9.3.0"
+
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+
+    //https://github.com/Dhaval2404/ImagePicker
+//    implementation 'com.github.dhaval2404:imagepicker:2.1'
+    implementation 'com.github.Drjacky:ImagePicker:1.8.4'
+
+    //Circle Image
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+
+
+}

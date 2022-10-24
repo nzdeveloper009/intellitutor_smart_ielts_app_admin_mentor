@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    tools:context=".admin.activity.add_mentor.RegisterMentorActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Intellitutor"
+        android:textColor="@color/purple_700"
+        android:textSize="25sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="16dp"
+        android:text="Enter Mentor Personal Information"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        app:cardElevation="8dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/nameTIL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Full Name"
+                    app:boxBackgroundColor="#FFFFFF"
+                    app:boxBackgroundMode="outline"
+                    app:endIconMode="clear_text"
+                    app:errorEnabled="true"
+                    app:errorIconDrawable="@drawable/ic_error"
+                    app:helperTextTextColor="@android:color/holo_red_dark"
+                    app:hintTextColor="@color/purple_500"
+                    app:startIconDrawable="@drawable/ic_person"
+                    app:startIconTint="@color/purple_700">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/nameEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:inputType="text|textCapWords" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/ageTIL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Age"
+                    app:boxBackgroundColor="#FFFFFF"
+                    app:boxBackgroundMode="outline"
+                    app:endIconMode="clear_text"
+                    app:errorEnabled="true"
+                    app:errorIconDrawable="@drawable/ic_error"
+                    app:helperTextTextColor="@android:color/holo_red_dark"
+                    app:hintTextColor="@color/purple_500"
+                    app:startIconDrawable="@drawable/ic_a"
+                    app:startIconTint="@color/purple_700">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ageEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:inputType="number" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/qualificationTIL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Qualification"
+                    app:boxBackgroundColor="#FFFFFF"
+                    app:boxBackgroundMode="outline"
+                    app:endIconMode="clear_text"
+                    app:errorEnabled="true"
+                    app:errorIconDrawable="@drawable/ic_error"
+                    app:helperTextTextColor="@android:color/holo_red_dark"
+                    app:hintTextColor="@color/purple_500"
+                    app:startIconDrawable="@drawable/ic_education"
+                    app:startIconTint="@color/purple_700">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/qualificationEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:inputType="text|textCapWords" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/institudeTIL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Institude Name"
+                    app:boxBackgroundColor="#FFFFFF"
+                    app:boxBackgroundMode="outline"
+                    app:endIconMode="clear_text"
+                    app:errorEnabled="true"
+                    app:errorIconDrawable="@drawable/ic_error"
+                    app:helperTextTextColor="@android:color/holo_red_dark"
+                    app:hintTextColor="@color/purple_500"
+                    app:startIconDrawable="@drawable/ic_institude"
+                    app:startIconTint="@color/purple_700">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/institudeEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:inputType="text|textCapWords" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/userNameTIL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Username"
+                    app:boxBackgroundColor="#FFFFFF"
+                    app:boxBackgroundMode="outline"
+                    app:endIconMode="clear_text"
+                    app:errorEnabled="true"
+                    app:errorIconDrawable="@drawable/ic_error"
+                    app:helperTextTextColor="@android:color/holo_red_dark"
+                    app:hintTextColor="@color/purple_500"
+                    app:startIconDrawable="@drawable/ic_institude"
+                    app:startIconTint="@color/purple_700">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/usernameEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/gmailTIL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Gmail"
+                    app:boxBackgroundColor="#FFFFFF"
+                    app:boxBackgroundMode="outline"
+                    app:endIconMode="clear_text"
+                    app:errorEnabled="true"
+                    app:errorIconDrawable="@drawable/ic_error"
+                    app:helperTextTextColor="@android:color/holo_red_dark"
+                    app:hintTextColor="@color/purple_700"
+                    app:startIconDrawable="@drawable/ic_mail"
+                    app:startIconTint="@color/purple_700">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/mailEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:inputType="textEmailAddress" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/passwordTIL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Password"
+                    app:boxBackgroundColor="#FFFFFF"
+                    app:boxBackgroundMode="outline"
+                    app:endIconMode="password_toggle"
+                    app:errorEnabled="true"
+                    app:errorIconDrawable="@drawable/ic_error"
+                    app:helperTextTextColor="@android:color/holo_red_dark"
+                    app:hintTextColor="@color/purple_200"
+                    app:startIconDrawable="@drawable/ic_password"
+                    app:startIconTint="@color/purple_700">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/passwordET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:inputType="textPassword" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <TextView
+                    android:id="@+id/cvTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Upload A Picture of NIC"
+                    android:textColor="@color/purple_700"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/cvIV"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/purple_700"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_add"
+                    app:tint="@color/white" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/submitBtn"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Next" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        style="?android:attr/progressBarStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>

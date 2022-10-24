@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".admin.activity.material.MaterialActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:freezesText="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="Material"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/addMaterialCard"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="5dp"
+                android:background="@color/white"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <TextView
+                    android:id="@+id/addMaterial"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="ADD"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="120dp"
+                android:id="@+id/viewExistingCard"
+                android:layout_height="120dp"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <TextView
+                    android:id="@+id/viewExisting"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/disable_card"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="VIEW\nEXISTING"
+                    android:textColor="@color/grayColor"
+                    android:textSize="18sp" />
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+</LinearLayout>
